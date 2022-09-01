@@ -27,7 +27,7 @@ stages:
           Dockerfile: '**/Dockerfile'
           tags: |
             $(tag)
-          
+      
 ## Publish Artifacts pipeline code in addition to Build and Push          
   
     # Task-2: Copy files (Copy files from a source folder to target folder)
