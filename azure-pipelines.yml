@@ -21,12 +21,11 @@ stages:
       steps:
       - task: Docker@2
         inputs:
-          containerRegistry: 'acrdrk'
-          repository: 'customaksnginx2'
+          containerRegistry: 'dockerhubconnect'
+          repository: 'dockernginx'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
-          tags: |
-            $(tag)
+          tags: '$(tag)'
       
 ## Publish Artifacts pipeline code in addition to Build and Push          
   
