@@ -22,7 +22,7 @@ stages:
       - task: Docker@2
         inputs:
           containerRegistry: 'dockerhubconnect'
-          repository: 'dockernginx'
+          repository: 'dockerdrk/dockernginx'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
           tags: '$(tag)'
